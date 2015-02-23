@@ -1,0 +1,82 @@
+{
+  "name": "angular-hide-on-disable",
+  "version": "0.1.0",
+  "description": "An AngularJS directive to remove properties from the model when a form control is disabled.",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/troywarr/angular-hide-on-disable.git"
+  },
+  "keywords": [
+    "angular",
+    "angularjs",
+    "directive",
+    "form",
+    "disable",
+    "disabled",
+    "model",
+    "ngmodel",
+    "ng-model",
+    "input",
+    "control",
+    "field",
+    "property",
+    "properties",
+    "object",
+    "data",
+    "formdata"
+  ],
+  "author": "Troy Warr <troy3000@gmail.com> (http://troywarr.info/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/troywarr/angular-hide-on-disable/issues"
+  },
+  "homepage": "https://github.com/troywarr/angular-hide-on-disable",
+  "dependencies": {
+    "angular": "^1.3.13",
+    "bootstrap": "^3.3.2"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.2.1",
+    "browserify": "^9.0.3",
+    "browserify-shim": "^3.8.3",
+    "coffee-script": "^1.9.1",
+    "coffeeify": "^1.0.0",
+    "del": "^1.1.1",
+    "gulp": "^3.8.11",
+    "gulp-concat": "^2.5.2",
+    "gulp-if": "^1.2.5",
+    "gulp-imagemin": "^2.2.0",
+    "gulp-jade": "^1.0.0",
+    "gulp-less": "^3.0.1",
+    "gulp-minify-css": "^0.4.6",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^0.6.6",
+    "gulp-rename": "^1.2.0",
+    "gulp-size": "^1.2.0",
+    "gulp-svg-sprite": "^1.0.18",
+    "gulp-uglify": "^1.1.0",
+    "gulp-umd": "^0.1.3",
+    "gulp-util": "^3.0.3",
+    "imagemin-pngcrush": "^4.0.0",
+    "vinyl": "^0.4.6",
+    "vinyl-transform": "^1.0.0"
+  },
+  "browser": {
+    "angular": "./node_modules/angular/angular.js"
+  },
+  "browserify": {
+    "transform": [
+      "coffeeify",
+      "browserify-shim"
+    ]
+  },
+  "browserify-shim": {
+    "angular": {
+      "exports": "angular"
+    }
+  }
+}

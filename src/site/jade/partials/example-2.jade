@@ -1,0 +1,57 @@
+.row.example.example-2(ng-controller="ExampleController as exampleCtrl")
+  .col-sm-6
+    form.form-horizontal(
+      name="exampleForm"
+      novalidate
+    )
+      //- name
+      .form-group
+        label.col-sm-2.control-label(for="name") Name
+        .col-sm-10
+          input.form-control#name(
+            name="name"
+            type="text"
+            ng-model="exampleCtrl.formData.name"
+            required
+          )
+      .form-group
+        .col-sm-10.col-sm-offset-2
+          .checkbox
+            label
+              input(
+                type="checkbox"
+                ng-model="exampleCtrl.includePersonalInfo"
+              )
+              | Include personal info
+      //- DOB
+      .form-group
+        label.col-sm-2.control-label(for="name") DOB
+        .col-sm-10
+          input.form-control#dib(
+            name="dob"
+            type="text"
+            ng-model="exampleCtrl.formData.dob"
+            ng-disabled="!exampleCtrl.includePersonalInfo"
+            hide-on-disable
+          )
+      //- SSN
+      .form-group
+        label.col-sm-2.control-label(for="name") SSN
+        .col-sm-10
+          input.form-control#ssn(
+            name="ssn"
+            type="text"
+            ng-model="exampleCtrl.formData.ssn"
+            ng-disabled="!exampleCtrl.includePersonalInfo"
+            hide-on-disable
+          )
+      //- submit button
+      .form-group
+        .col-sm-10.col-sm-offset-2.form-buttons
+          button.btn.btn-warning(type="button") Cancel
+          button.btn.btn-primary(
+            type="submit"
+            ng-disabled="exampleForm.$invalid"
+          ) Save
+  .col-sm-6
+    .output {{ exampleCtrl.formData | json }}

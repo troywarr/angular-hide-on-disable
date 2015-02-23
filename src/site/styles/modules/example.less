@@ -1,0 +1,41 @@
+.example {
+  form {
+    background-color: #c6cfcf;
+    padding: @gutterStandard @gutterStandard @gutterStandard * 1.2;
+
+    input {
+      .white-overlay(0.9);
+      .box-shadow(none);
+
+      &[disabled] {
+        .white-overlay(0.4);
+      }
+    }
+
+    button {
+      margin-right: @gutterStandard / 1.5;
+    }
+
+    .form-buttons {
+      margin-top: 1rem;
+    }
+
+    .form-group {
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    label {
+      .small-caps;
+    }
+  }
+
+  .output {
+    .white-overlay(0.7);
+    font-family: monospace;
+    white-space: pre-wrap;
+    padding: @gutterStandard;
+    font-size: @fontSizeBase * 0.9;
+  }
+}

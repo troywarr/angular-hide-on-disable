@@ -1,0 +1,16 @@
+// mixins
+
+.white-overlay(@alpha: 0.5) {
+  background-color: rgba(255, 255, 255, @alpha);
+}
+
+.black-overlay(@alpha: 0.5) {
+  background-color: rgba(0, 0, 0, @alpha);
+}
+
+.small-caps() {
+  .lato-semibold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 1.4rem;
+}

@@ -1,0 +1,42 @@
+{
+  "name": "angular-hide-on-disable",
+  "version": "0.1.0",
+  "homepage": "https://github.com/troywarr/angular-hide-on-disable",
+  "authors": [
+    "Troy Warr <troy3000@gmail.com>"
+  ],
+  "description": "An AngularJS directive to remove properties from the model when a form control is disabled.",
+  "main": "dist/index.js",
+  "moduleType": [
+    "amd",
+    "globals",
+    "node"
+  ],
+  "keywords": [
+    "angular",
+    "angularjs",
+    "directive",
+    "form",
+    "disable",
+    "disabled",
+    "model",
+    "ngmodel",
+    "ng-model",
+    "input",
+    "control",
+    "field",
+    "property",
+    "properties",
+    "object",
+    "data",
+    "formdata"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

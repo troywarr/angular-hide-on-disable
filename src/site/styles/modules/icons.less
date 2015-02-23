@@ -1,0 +1,62 @@
+// SVG icons
+
+svg {
+  display: block !important;
+}
+
+.icon {
+  .square(30);
+  display: inline-block;
+  fill: #fff;
+}
+
+.icon-facebook {
+  .square(36);
+  margin-top: -3px;
+}
+
+.icon-twitter {
+  .square(38);
+  margin-top: -4px;
+}
+
+.icon-google-plus {
+  .square(32);
+}
+
+.icon-github {
+  .square(32);
+  margin-top: -1px;
+}
+
+.icon-npm {
+  width: 45px;
+  height: 30px;
+}
+
+.social-icons {
+  .clearfix();
+  list-style: none;
+  border: 5px solid #fff;
+  display: table;
+  margin: 0 auto;
+  padding: 15px 15px 6px;
+
+  li {
+    float: left;
+
+    & + li {
+      margin-left: 1.6rem;
+    }
+
+    a {
+      .opacity(0.7);
+      .transition(opacity 0.2s ease);
+
+      &:hover,
+      &:active {
+        .opacity(1);
+      }
+    }
+  }
+}

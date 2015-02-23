@@ -1,0 +1,69 @@
+// global styles
+
+body {
+  .lato-light;
+  background-color: @colorBackground;
+  padding: @gutterBodyTop 0 @gutterBodyTop * 2;
+}
+
+body,
+.form-control {
+  color: @colorForeground;
+  font-size: @fontSizeBase;
+}
+
+input,
+textarea {
+  &.form-control {
+    .border-radius(0);
+    border: none;
+    height: auto;
+    padding: 1rem 1.3rem;
+  }
+}
+
+label {
+  &.control-label {
+    .small-caps;
+    line-height: 2.5rem;
+    padding: 1rem 0 !important;
+  }
+}
+
+.radio,
+.checkbox {
+  label {
+    .lato-light;
+  }
+}
+
+input[type="checkbox"] {
+  margin-top: 0.4rem;
+}
+
+a {
+  text-decoration: none;
+  color: #00c;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    color: #00a;
+    outline: none;
+  }
+}
+
+strong {
+  .lato-normal;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 0;
+}
+
+.btn {
+  .border-radius(0);
+  border: none;
+  padding: 1rem 1.5rem;
+}
